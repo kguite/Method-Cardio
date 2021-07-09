@@ -15,8 +15,7 @@
 	// split map lowercase join
 	// compare the two
 
-
-
+//Group Solution:
 function palindromeChecker(word){
   let reversed = word.split('').map((el) => {
 	return el.toLowerCase()
@@ -30,13 +29,16 @@ function palindromeChecker(word){
 
 
 //test cases
-console.log(palindromeChecker('tacoCat') === true)
-console.log(palindromeChecker('cup') === false)
-console.log(palindromeChecker('Leon Noel') === true)
-
-
-
-//test cases
 console.log(palindromeChecker('tacocat') === true)
 console.log(palindromeChecker('cup') === false)
 console.log(palindromeChecker('Leon Noel') === true)
+
+
+//Leon's Solution:
+// string split into an array. changed each letter in the array to an array of all lowercase letters. comparing the two arrays
+function isPali(str){
+	let lowerCase = str.split('').map(l => l.toLowerCase())
+	return lowerCase,join("") === lowerCase.reverse().join("")
+
+
+}
