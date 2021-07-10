@@ -15,10 +15,10 @@
 // Pseudocode: 
 // add the elements 
 // determine odd or even
-// if oddd print "odd" 0
+// if odd print "odd" 0
 // if even print "even"
 
-function evenOrOdd(arr){
+function oddOrEven(arr){
   let sum= arr.reduce((acc,c)=>acc + c,0)
 if(sum %2===0 || sum === 0){
   return "even"
